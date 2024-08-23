@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body , html{
+    overflow-x: hidden;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(47, 2, 54);
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li:hover{
+    cursor: pointer;
+    color: #fc036b;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(bg.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: rgb(42, 9, 93);
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: rgb(47, 2, 54);
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.ctn:hover{
+    padding: 8px 15px;
+    background-color:black;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px white;
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(73, 73, 126);
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col img{
+    width: 90%;
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: #484872 ;
+    margin: 20px auto;
+}
+p{
+    color: #08215b;
+    padding: 0px 40px ;
+}
+.events .ctn{
+    margin-top: 30px;
+}
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(data:image/jpeg;base64,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https://d18mr9iuob0gar.cloudfront.net/media/boats/2024/07/rental-Motor-boat-bMckinna-52feet-bAlameda-bCA_Sh8J2kR.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: rgb(47, 2, 54); 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 7vmin;
+}
+.explore-content .line{
+    margin: 50px;
+}
+.explore-content p{
+    color: rgb(49, 6, 78);
+}
+.explore-content .ctn{
+    margin-top: 40px;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%;
+}
+.tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img{
+    max-width: 300px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: #10107a;
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+.content-col .ctn{
+    margin-left: -100px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #d6f1fb;
+    text-align: center;
+}
+.footer p {
+    color: rgb(3, 6, 50);
+    margin: 20px auto;
+}
+ @media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+         flex-direction: column; 
+         width: 100%;
+        height: 100vh;
+        justify-content:  center;
+        background: #484872;
+        margin-top: -900px;
+        transform: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius:30% ;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    } 
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    .explore-content{
+        width: 100%;
+    }
+    .tours .col {
+        width: 100%;
+    }
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img{
+        padding: 10px;
+    }
+}  
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
